@@ -1,0 +1,24 @@
+.nav__list {
+    display: flex;
+}
+
+.nav__item {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.31;
+
+    &:not(:last-child) {
+    margin-right: 35px;
+    }
+}
+
+.nav__link {
+    color: $color-light;
+
+    &:hover,
+    &:active,
+    &:focus,
+    &--current {
+        color: $color-red;
+    }
+}

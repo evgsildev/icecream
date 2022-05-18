@@ -1,0 +1,37 @@
+.heading {
+    font-family: $font-second;
+    font-size: 18px;
+    line-height: 1.17;
+    text-align: center;
+    text-transform: uppercase;
+    color: $color-pink;
+
+    @media screen and (min-width: 768px) {
+        font-size: 26px;
+        line-height: 1.15;
+    }
+
+   @media screen and (min-width: 1200px) {
+        font-size: 30px;
+        line-height: 1.13;
+   }
+}
+
+.heading__accent {
+    display: block;
+    margin-top: 15px;
+
+    font-size: 34px;
+    line-height: 1.14;
+    color: $color-red;    
+
+    @media screen and (min-width: 768px) {
+        font-size: 48px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 58px;
+        line-height: 1.13;
+        letter-spacing: 0.06em;
+    }
+}

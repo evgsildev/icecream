@@ -1,0 +1,19 @@
+@import 'base/variables';
+@import 'base/body';
+@import 'base/reset';
+
+
+@import 'utils/general';
+@import 'utils/container';
+@import 'utils/visualy-hidden';
+
+
+@import 'components/header';
+@import 'components/navigation';
+@import 'components/heading';
+@import 'components/hero';
+@import 'components/products';
+@import 'components/information';
+@import 'components/review';
+@import 'components/stores';
+@import 'components/footer';
