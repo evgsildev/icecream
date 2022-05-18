@@ -15,6 +15,9 @@
 .nav__link {
     color: $color-light;
 
+    transition-property: color;
+    @extend %transition-style;
+
     &:hover,
     &:active,
     &:focus,

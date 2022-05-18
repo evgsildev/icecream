@@ -133,7 +133,7 @@
                     ./images/desktop/product-desktop1.png    1x,
                     ./images/desktop/product-desktop1@2x.png 2x
                   "
-                  media="(min-width:1200px)"
+                  media="(min-width: 1200px)"
                   type="image/png"
                 />
                 <source
@@ -141,7 +141,7 @@
                     ./images/tablet/product-tablet1.png    1x,
                     ./images/tablet/product-tablet1@2x.png 2x
                   "
-                  media="(min-width:1200px)"
+                  media="(min-width: 768px)"
                   type="image/png"
                 />
                 <source
@@ -149,14 +149,13 @@
                     ./images/mobile/product-mobile1.png    1x,
                     ./images/mobile/product-mobile1@2x.png 2x
                   "
-                  media="(min-width:1200px)"
+                  media="(max-width: 767px)"
                   type="image/png"
                 />
                 <img
                   class="products__img"
                   src="./images/mobile/product-mobile1.png"
                   alt="Ice Coffee"
-                  width="335"
                 />
               </picture>
 
@@ -166,18 +165,25 @@
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et
                 </p>
+                <button class="products__btn">
+                  <svg class="products__icon" width="11" height="10">
+                    <use
+                      href="./images/icons/sprite.svg#icon-arrow-right"
+                    ></use>
+                  </svg>
+                </button>
               </div>
             </a>
           </li>
           <li class="products__item">
             <a class="products__link link" href="#">
-              <picture class="products__img">
+              <picture>
                 <source
                   srcset="
                     ./images/desktop/product-desktop2.png    1x,
                     ./images/desktop/product-desktop2@2x.png 2x
                   "
-                  media="(min-width:1200px)"
+                  media="(min-width: 1200px)"
                   type="image/png"
                 />
                 <source
@@ -185,7 +191,7 @@
                     ./images/tablet/product-tablet2.png    1x,
                     ./images/tablet/product-tablet2@2x.png 2x
                   "
-                  media="(min-width:1200px)"
+                  media="(min-width: 768px)"
                   type="image/png"
                 />
                 <source
@@ -193,14 +199,13 @@
                     ./images/mobile/product-mobile2.png    1x,
                     ./images/mobile/product-mobile2@2x.png 2x
                   "
-                  media="(min-width:1200px)"
+                  media="(max-width: 767px)"
                   type="image/png"
                 />
                 <img
                   class="products__img"
                   src="./images/mobile/product-mobile2.png"
                   alt="Ice Coffee"
-                  width="335"
                 />
               </picture>
               <div class="products__container">
@@ -209,18 +214,25 @@
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et
                 </p>
+                <button class="products__btn">
+                  <svg class="products__icon" width="11" height="10">
+                    <use
+                      href="./images/icons/sprite.svg#icon-arrow-right"
+                    ></use>
+                  </svg>
+                </button>
               </div>
             </a>
           </li>
           <li class="products__item">
             <a class="products__link link" href="#">
-              <picture class="products__img">
+              <picture>
                 <source
                   srcset="
                     ./images/desktop/product-desktop3.png    1x,
                     ./images/desktop/product-desktop3@2x.png 2x
                   "
-                  media="(min-width:1200px)"
+                  media="(min-width: 1200px)"
                   type="image/png"
                 />
                 <source
@@ -228,7 +240,7 @@
                     ./images/tablet/product-tablet3.png    1x,
                     ./images/tablet/product-tablet3@2x.png 2x
                   "
-                  media="(min-width:1200px)"
+                  media="(min-width: 768px)"
                   type="image/png"
                 />
                 <source
@@ -236,14 +248,13 @@
                     ./images/mobile/product-mobile3.png    1x,
                     ./images/mobile/product-mobile3@2x.png 2x
                   "
-                  media="(min-width:1200px)"
+                  media="(max-width: 767px)"
                   type="image/png"
                 />
                 <img
                   class="products__img"
                   src="./images/mobile/product-mobile3.png"
                   alt="Ice Coffee"
-                  width="335"
                 />
               </picture>
               <div class="products__container">
@@ -252,6 +263,13 @@
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et
                 </p>
+                <button class="products__btn">
+                  <svg class="products__icon" width="11" height="10">
+                    <use
+                      href="./images/icons/sprite.svg#icon-arrow-right"
+                    ></use>
+                  </svg>
+                </button>
               </div>
             </a>
           </li>
@@ -264,47 +282,71 @@
         <h2 class="information__heading heading">
           tradition and love <span class="heading__accent">how it’s made?</span>
         </h2>
-        <img src="" alt="cow" />
-        <div class="information__content">
-          <p class="information__text">
-            Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel
-            justo cursus, faucibus lorem eget, egestas eros. Maecenas eleifend
-            erat at justo fringilla.
-          </p>
-          <p class="information__text">
-            Curabitur lacinia enim at ex blandit, vel pellentesque odio
-            elementum. Mauris rhoncus orci in imperdiet placerat. Vestibulum
-            euismod nisl suscipit ligula volutpat, a feugiat urna maximus. Cras
-            massa nibh, tincidunt.
-            <span class="information__text"
-              >Aliquam erat volutpat. Aenean accumsan.</span
-            >
-          </p>
-          <a class="information__link link" href="">Read more</a>
+        <div class="information__box">
+          <picture>
+            <source
+              srcset="
+                ./images/desktop/cow-desktop.png    1x,
+                ./images/desktop/cow-desktop@2x.png 2x
+              "
+              media="(min-width: 1200px)"
+              type="image/png"
+            />
+            <source
+              srcset="
+                ./images/tablet/cow-tablet.png    1x,
+                ./images/tablet/cow-tablet@2x.png 2x
+              "
+              media="(min-width: 768px)"
+              type="image/png"
+            />
+            <source
+              srcset="
+                ./images/mobile/cow-mobile.png    1x,
+                ./images/mobile/cow-mobile@2x.png 2x
+              "
+              media="(max-width: 767px)"
+              type="image/png"
+            />
+            <img
+              class="information__img"
+              src="./images/mobile/cow-mobile.png"
+              alt="cow"
+            />
+          </picture>
+          <div class="information__content">
+            <p class="information__text">
+              Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel
+              justo cursus, faucibus lorem eget, egestas eros. Maecenas eleifend
+              erat at justo fringilla.
+            </p>
+            <p class="information__text">
+              Curabitur lacinia enim at ex blandit, vel pellentesque odio
+              elementum. Mauris rhoncus orci in imperdiet placerat. Vestibulum
+              euismod nisl suscipit ligula volutpat, a feugiat urna maximus.
+              Cras massa nibh, tincidunt.
+            </p>
+
+            <p class="information__text">
+              Aliquam erat volutpat. Aenean accumsan.
+            </p>
+            <a class="information__link link" href="">Read more</a>
+          </div>
         </div>
-        <ul class="information__list">
+        <ul class="information__list list">
           <li class="information__item">
-            <svg class="information__icon">
-              <use></use>
-            </svg>
             <h3 class="information__number">721</h3>
             <p class="information__description">
               Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
             </p>
           </li>
           <li class="information__item">
-            <svg class="information__icon">
-              <use></use>
-            </svg>
             <h3 class="information__number">16kg</h3>
             <p class="information__description">
               Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
             </p>
           </li>
           <li class="information__item">
-            <svg class="information__icon">
-              <use></use>
-            </svg>
             <h3 class="information__number">84</h3>
             <p class="information__description">
               Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
@@ -313,7 +355,7 @@
         </ul>
       </div>
     </section>
-    <section class="review">
+    <section class="review container">
       <div class="review__container container">
         <ul class="review__list list">
           <li class="review__item">

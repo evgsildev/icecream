@@ -23,9 +23,12 @@
     border-radius: 22px;
 
     cursor: pointer;
+
+    transition-property: background-color;
+    @extend %transition-style;
     
     &:hover {
-        background: #ECEBEB;
+        background-color: $background-hover;
     }
 }
 
