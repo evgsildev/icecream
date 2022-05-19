@@ -1,0 +1,12 @@
+@mixin card-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: calc(-1 * #{$card-set-gap});
+    margin-top: calc(-1 * #{$card-set-gap});
+}
+
+@mixin card-item ($items-number) {
+    flex-basis: calc((100% - #{$items-number} * #{$card-set-gap}) / #{$items-number});
+    margin-left: $card-set-gap;
+    margin-top: $card-set-gap;
+}

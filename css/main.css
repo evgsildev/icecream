@@ -33,7 +33,7 @@ img {
   margin: 0 auto;
 }
 
-@media screen and (mix-width: 768px) {
+@media screen and (min-width: 768px) {
   .container {
     width: 700px;
   }
@@ -115,6 +115,7 @@ img {
 .heading {
   font-family: "Titan One", sans-serif;
   font-size: 18px;
+  font-weight: 400;
   line-height: 1.17;
   text-align: center;
   text-transform: uppercase;
@@ -181,25 +182,24 @@ img {
 }
 
 .products__heading {
-  margin-bottom: 31px;
+  margin-bottom: 144px;
 }
 
 @media screen and (min-width: 768px) {
   .products__heading {
-    margin-bottom: 39px;
+    margin-bottom: 150px;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .products__heading {
-    margin-bottom: 49px;
+    margin-bottom: 259px;
   }
 }
 
 .products__list {
   display: flex;
   flex-wrap: wrap;
-  margin-top: -17px;
 }
 
 @media screen and (min-width: 768px) {
@@ -210,13 +210,17 @@ img {
 
 @media screen and (min-width: 1200px) {
   .products__list {
-    margin-left: -22px;
+    margin-left: -25px;
   }
+}
+
+.products__item {
+  position: relative;
 }
 
 @media screen and (max-width: 767px) {
   .products__item {
-    margin-top: 17px;
+    margin-bottom: 130px;
   }
 }
 
@@ -229,41 +233,27 @@ img {
 
 @media screen and (min-width: 1200px) {
   .products__item {
-    flex-basis: calc((100% - 22px*3) / 3);
-    margin-left: 22px;
-  }
-}
-
-.products__link {
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  justify-content: center;
-  padding-top: 113px;
-}
-
-@media screen and (min-width: 768px) {
-  .products__link {
-    padding-top: 111px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .products__link {
-    padding-top: 210px;
+    flex-basis: calc((100% - 25px*3) / 3);
+    margin-left: 25px;
   }
 }
 
 .products__img {
   position: absolute;
-  top: 0;
-  left: 0;
+  bottom: 100%;
+  left: 50%;
+  transform: translate(-50%, 54%);
+}
+
+@media screen and (min-width: 1200px) {
+  .products__img {
+    transform: translate(-50%, 35%);
+  }
 }
 
 .products__container {
   background-color: #FFB8CA;
-  padding-top: 161px;
-  padding: 161px 44px 40px 44px;
+  padding: 161px 40px 40px 40px;
   border-radius: 24px;
   text-align: center;
   color: #FFFFFF;
@@ -284,17 +274,23 @@ img {
   background-color: #C2E297;
 }
 
+@media screen and (min-width: 768px) {
+  .products__container {
+    padding: 152px 11px 40px 11px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .products__container {
-    padding-bottom: 50px;
+    padding: 163px 44px 50px 44px;
   }
 }
 
 .products__title {
   font-family: "Titan One", sans-serif;
   font-weight: 400;
-  font-size: 30px;
-  line-height: 34px;
+  font-size: 20px;
+  line-height: 1.15;
   text-transform: uppercase;
 }
 
@@ -309,10 +305,33 @@ img {
   border-bottom: 6px dotted white;
 }
 
+@media screen and (min-width: 1200px) {
+  .products__title {
+    font-size: 30px;
+    line-height: 1.13;
+  }
+}
+
 .products__text {
-  margin-bottom: 62px;
-  font-size: 16px;
-  line-height: 1.76;
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.52;
+}
+
+@media screen and (min-width: 768px) {
+  .products__text {
+    margin-bottom: 40px;
+    line-height: 1.76;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .products__text {
+    margin-bottom: 62px;
+    font-size: 16px;
+    line-height: 1.76;
+  }
 }
 
 .products__btn {
@@ -382,12 +401,13 @@ img {
 .information__box {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 39px;
+  flex-direction: column;
 }
 
 @media screen and (min-width: 768px) {
   .information__box {
     margin-bottom: 66px;
+    flex-direction: row;
   }
 }
 
@@ -400,22 +420,71 @@ img {
 .information__content {
   display: flex;
   flex-direction: column;
-  width: 463px;
-  padding-top: 50px;
+  margin-top: 46px;
+}
+
+@media screen and (max-width: 767px) {
+  .information__content {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .information__content {
+    margin-top: 0;
+    padding-top: 50px;
+    width: 340px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .information__content {
+    width: 463px;
+  }
 }
 
 .information__text {
   font-weight: 500;
-  font-size: 16px;
-  line-height: 1.76;
+  font-size: 12px;
+  line-height: 1.62;
   color: #000000;
 }
 
 .information__text:not(:first-child) {
-  margin-top: 35px;
-  font-size: 14px;
-  line-height: 1.94;
+  margin-top: 14px;
+  font-size: 12px;
+  line-height: 1.62;
   color: #907E82;
+}
+
+@media screen and (max-width: 767px) {
+  .information__text {
+    width: 220px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .information__text {
+    font-size: 14px;
+    line-height: 1.76;
+  }
+  .information__text:not(:first-child) {
+    margin-top: 18px;
+    font-size: 14px;
+    line-height: 1.76;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .information__text {
+    font-size: 16px;
+    line-height: 1.76;
+  }
+  .information__text:not(:first-child) {
+    margin-top: 35px;
+    font-size: 14px;
+    line-height: 1.94;
+  }
 }
 
 .information__link {
@@ -424,7 +493,7 @@ img {
   align-items: center;
   width: 176px;
   height: 44px;
-  margin-top: 25px;
+  margin-top: 17px;
   color: #D41443;
   font-weight: 700;
   line-height: 1.31px;
@@ -455,15 +524,20 @@ img {
 }
 
 .information__item {
-  flex-basis: calc((100% - 3*30px)/3);
   margin-left: 30px;
+  margin-top: 39px;
+}
+
+@media screen and (min-width: 768px) {
+  .information__item {
+    flex-basis: calc((100% - 3*30px)/3);
+  }
 }
 
 .information__number {
   margin-bottom: 15px;
   font-family: "Titan One", sans-serif;
-  font-size: 58px;
-  font-weight: 400;
+  font-size: 36px;
   line-height: 1.14;
   text-transform: uppercase;
   color: #D41443;
@@ -474,22 +548,55 @@ img {
   display: block;
   height: 50px;
   margin-bottom: 40px;
-  background-image: url(../../images/icons/icon1.svg);
+  background-image: url(./../images/icons/icon1.svg);
   background-repeat: no-repeat;
 }
 
 .information__item:nth-child(2) .information__number::before {
-  background-image: url(../../images/icons/icon2.svg);
+  background-image: url(./../images/icons/icon2.svg);
 }
 
 .information__item:last-child .information__number::before {
-  background-image: url(../../images/icons/icon3.svg);
+  background-image: url(./../images/icons/icon3.svg);
+}
+
+@media screen and (min-width: 768px) {
+  .information__number {
+    font-size: 48px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .information__number {
+    font-size: 58px;
+  }
 }
 
 .information__description {
+  font-size: 12px;
   font-weight: 700;
-  line-height: 1.76;
   letter-spacing: 0.02em;
+  line-height: 1.7;
   color: #000000;
+}
+
+@media screen and (max-width: 767px) {
+  .information__description {
+    width: 230px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .information__description {
+    font-size: 14px;
+    line-height: 1.74;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .information__description {
+    font-size: 16px;
+    line-height: 1.76;
+  }
 }
 /*# sourceMappingURL=main.css.map */
