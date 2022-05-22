@@ -19,13 +19,7 @@
     color: $color-red;
 
     background-color: $background-light;
-    border: transparent;
     border-radius: 22px;
-
-    cursor: pointer;
-
-    transition-property: background-color;
-    @extend %transition-style;
     
     &:hover {
         background-color: $background-hover;

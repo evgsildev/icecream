@@ -148,9 +148,7 @@
     height: 40px;
 
     background-color: $background-light;
-    border: transparent;
     border-radius: 50%;
-    cursor: pointer;
 
     transition-property: opacity;
     @extend %transition-style;

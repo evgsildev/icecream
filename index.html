@@ -82,12 +82,12 @@
         <h1 class="hero__heading">
           ice cream made with <span class="heading__accent"></span>passion
         </h1>
-        <ul class="button-list list">
-          <li class="button-list__item">
-            <a href="#" class="button-list__btn link">Products</a>
+        <ul class="hero__list list">
+          <li class="hero__item">
+            <a href="#" class="hero__link link">Products</a>
           </li>
-          <li class="button-list__item">
-            <a href="#" class="button-list__btn link">How it’s made?</a>
+          <li class="hero__item">
+            <a href="#" class="hero__link link">How it’s made?</a>
           </li>
         </ul>
 
@@ -159,7 +159,7 @@
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et
               </p>
-              <button class="products__btn">
+              <button class="products__btn btn">
                 <svg class="products__icon" width="11" height="10">
                   <use href="./images/icons/sprite.svg#icon-arrow-right"></use>
                 </svg>
@@ -204,7 +204,7 @@
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et
               </p>
-              <button class="products__btn">
+              <button class="products__btn btn">
                 <svg class="products__icon" width="11" height="10">
                   <use href="./images/icons/sprite.svg#icon-arrow-right"></use>
                 </svg>
@@ -249,7 +249,7 @@
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et
               </p>
-              <button class="products__btn">
+              <button class="products__btn btn">
                 <svg class="products__icon" width="11" height="10">
                   <use href="./images/icons/sprite.svg#icon-arrow-right"></use>
                 </svg>
@@ -338,7 +338,7 @@
         </ul>
       </div>
     </section>
-    <section class="review container">
+    <section class="review container visually-hidden">
       <div class="review__container container">
         <ul class="review__list list">
           <li class="review__item">
@@ -495,12 +495,14 @@
             </ul>
           </li>
         </ul>
-        <ul class="stores__buttons stores-buttons">
+        <ul class="stores__buttons stores-buttons list">
           <li class="stores-buttons__item">
-            <a class="stores-buttons__link link" href="">Our Locations</a>
+            <button class="stores-buttons__btn btn btn--accent" href="">
+              Our Locations
+            </button>
           </li>
           <li class="stores-buttons__item">
-            <a class="stores-buttons__link link" href="">Franchise</a>
+            <button class="stores-buttons__btn btn" href="">Franchise</button>
           </li>
         </ul>
       </div>
