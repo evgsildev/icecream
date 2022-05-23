@@ -80,6 +80,11 @@
     margin: 0 auto;
     margin-bottom: 19px;
     width: 209px;
+
+    animation-duration: 2000ms;
+    animation-name: blink;
+    animation-delay: 250ms;
+    animation-iteration-count: infinite;
 }
 
 

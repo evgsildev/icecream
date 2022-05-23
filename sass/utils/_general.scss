@@ -41,4 +41,9 @@
     &:focus {
         background-color: $background-accent-hover;
     }
+
+    & .icon {
+        fill: $color-light;
+    }
 }
+

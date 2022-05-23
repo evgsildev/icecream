@@ -1,18 +1,19 @@
 .header {
     position: relative;
-    
-    background-color: $background-pink;
 }
+
 
 .header__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 6px; 
-    
+    padding-top: 6px;
+
+    animation-duration: 1500ms;
+    animation-name: show;
+    animation-iteration-count: 1;
     @media screen and (min-width: 768px) {
         padding-top: 37px;
-        padding-bottom: 37px;
         justify-content: flex-start;
     }
 
@@ -47,16 +48,3 @@
     }
 }
 
-@keyframes blink {
-    from {
-       transform: scale(1);
-    }
-
-    to {
-        transform: scale(1);
-    }
-
-    50% {
-        transform: scale(1.05);
-    }
-}

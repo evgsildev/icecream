@@ -20,123 +20,229 @@
   </head>
 
   <body>
-    <!--Header-->
-    <header class="header">
-      <div class="container header__container">
-        <a href="" class="logo">
-          <img src="./images/logo.png" alt="logo" />
-        </a>
-        <nav class="nav">
-          <ul class="nav__list list">
-            <li class="nav__item">
-              <a class="nav__link link nav__link--current" href="#">Home</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link link" href="#">About us</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link link" href="#">How it’s made?</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link link" href="#">Our products</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link link" href="#">Contact</a>
-            </li>
-          </ul>
-        </nav>
-        <button
-          type="button"
-          class="mobile-button"
-          aria-expanded="false"
-          aria-controls="mobile-menu"
-          data-menu-button
-        >
-          <svg
-            class="button__icon icon"
-            width="20"
-            height="14"
-            aria-label="Переключатель мобильного меню"
-          >
-            <use
-              class="button__icon-burger"
-              href="./images/icons/sprite.svg#icon-burger"
-            ></use>
-            <use
-              class="button__icon-cross"
-              href="./images/icons/sprite.svg#icon-cross"
-            ></use>
-          </svg>
-        </button>
-        <div class="mobile-menu" id="mobile-menu" data-menu>
-          <button class="mobile-menu__btn btn" type="button">Buy now</button>
-          <nav class="mobile-menu__nav">
-            <ul class="mobile-menu__list list">
-              <li class="mobile-menu__item">
-                <a
-                  class="mobile-menu__link link mobile-menu__link--current"
-                  href="#"
-                  >Home</a
+    <section class="hero">
+      <!--Header-->
+      <header class="header">
+        <div class="container header__container">
+          <a href="#" class="logo">
+            <img src="./images/logo.png" alt="logo" />
+          </a>
+          <nav class="nav">
+            <ul class="nav__list list">
+              <li class="nav__item">
+                <a class="nav__link link nav__link--current" href="#">Home</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link link" href="#about-us">About us</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link link" href="#how-its-made"
+                  >How it’s made?</a
                 >
               </li>
-              <li class="mobile-menu__item">
-                <a class="mobile-menu__link link" href="#">About us</a>
+              <li class="nav__item">
+                <a class="nav__link link" href="#products">Our products</a>
               </li>
-              <li class="mobile-menu__item">
-                <a class="mobile-menu__link link" href="#">How it’s made?</a>
-              </li>
-              <li class="mobile-menu__item">
-                <a class="mobile-menu__link link" href="#">Our products</a>
-              </li>
-              <li class="mobile-menu__item">
-                <a class="mobile-menu__link link" href="#">Contact</a>
+              <li class="nav__item">
+                <a class="nav__link link" href="#contacts">Contacts</a>
               </li>
             </ul>
           </nav>
+          <button
+            type="button"
+            class="mobile-button"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+            data-menu-button
+          >
+            <svg
+              class="button__icon icon"
+              width="20"
+              height="14"
+              aria-label="Переключатель мобильного меню"
+            >
+              <use
+                class="button__icon-burger"
+                href="./images/icons/sprite.svg#icon-burger"
+              ></use>
+              <use
+                class="button__icon-cross"
+                href="./images/icons/sprite.svg#icon-cross"
+              ></use>
+            </svg>
+          </button>
+          <div class="mobile-menu" id="mobile-menu" data-menu>
+            <button class="mobile-menu__btn btn" type="button">
+              Buy now
+              <svg class="products__icon icon" width="11" height="10">
+                <use href="./images/icons/sprite.svg#icon-arrow-right"></use>
+              </svg>
+            </button>
+            <nav class="mobile-menu__nav">
+              <ul class="mobile-menu__list list">
+                <li class="mobile-menu__item">
+                  <a
+                    class="mobile-menu__link link mobile-menu__link--current"
+                    href="#"
+                    >Home</a
+                  >
+                </li>
+                <li class="mobile-menu__item">
+                  <a class="mobile-menu__link link" href="#about-us"
+                    >About us</a
+                  >
+                </li>
+                <li class="mobile-menu__item">
+                  <a class="mobile-menu__link link" href="#how-its-made"
+                    >How it’s made?</a
+                  >
+                </li>
+                <li class="mobile-menu__item">
+                  <a class="mobile-menu__link link" href="#products"
+                    >Our products</a
+                  >
+                </li>
+                <li class="mobile-menu__item">
+                  <a class="mobile-menu__link link" href="#contacts"
+                    >Contacts</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <button class="header__button btn" type="button">
+            Buy now
+            <svg class="products__icon icon" width="11" height="10">
+              <use href="./images/icons/sprite.svg#icon-arrow-right"></use>
+            </svg>
+          </button>
         </div>
-        <button class="header__button btn" type="button">Buy now</button>
-      </div>
-    </header>
+      </header>
 
-    <!--Hero-->
-    <section class="hero visually-hidden">
-      <div class="container">
-        <h1 class="hero__heading">
-          ice cream made with <span class="heading__accent"></span>passion
-        </h1>
-        <ul class="hero__list list">
-          <li class="hero__item">
-            <a href="#" class="hero__link link">Products</a>
-          </li>
-          <li class="hero__item">
-            <a href="#" class="hero__link link">How it’s made?</a>
-          </li>
-        </ul>
+      <div class="hero__container container">
+        <picture>
+          <source
+            srcset="
+              ./images/desktop/ice-cream-desktop.png    1x,
+              ./images/desktop/ice-cream-desktop@2x.png 2x
+            "
+            media="(min-width: 1200px)"
+            type="image/png"
+          />
+          <source
+            srcset="
+              ../images/tablet/ice-cream-tablet.png    1x,
+              ../images/tablet/ice-cream-tablet@2x.png 2x
+            "
+            media="(min-width: 768px)"
+            type="image/png"
+          />
+          <source
+            srcset="
+              ./images/mobile/ice-cream-mobile.png    1x,
+              ./images/mobile/ice-cream-mobile@2x.png 2x
+            "
+            media="(max-width: 767px)"
+            type="image/png"
+          />
+          <img
+            class="hero__img"
+            src="./images/mobile/ice-cream-mobile.png"
+            alt="Ice Cream"
+          />
+        </picture>
 
-        <ul class="info list">
-          <li class="info__item">
-            <span class="info__img"></span><span class="info__number">16</span>
-            <p class="info__description">cafes</p>
-          </li>
-          <li>
-            <span class="info__img"></span><span class="info__number">23</span>
-            <p class="info__description">food trucks</p>
-          </li>
-        </ul>
-
-        <div class="hero__info">
-          <img src="" alt="milk" />
-          <p class="hero__description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et
-          </p>
-          <button class="hero__btn"></button>
+        <div class="hero__box">
+          <div class="heading-box">
+            <h1 class="hero__heading heading">
+              ice cream made with
+              <span class="hero__accent">passion</span>
+            </h1>
+            <ul class="hero__list list">
+              <li class="hero__item">
+                <a href="#" class="hero__link link">Products</a>
+              </li>
+              <li class="hero__item">
+                <a href="#" class="hero__link link">How it’s made?</a>
+              </li>
+            </ul>
+          </div>
+          <ul class="hero__stats hero-stats list">
+            <li class="hero-stats__item">
+              <p class="hero-stats__number">16</p>
+              <p class="hero-stats__description">cafes</p>
+            </li>
+            <li class="hero-stats__item">
+              <p class="hero-stats__number">23</p>
+              <p class="hero-stats__description">food trucks</p>
+            </li>
+          </ul>
         </div>
+        <div class="hero__info hero-info">
+          <picture>
+            <source
+              srcset="
+                ./images/desktop/milk-desktop.png    1x,
+                ./images/desktop/milk-desktop@2x.png 2x
+              "
+              media="(min-width: 1200px)"
+              type="image/png"
+            />
+            <source
+              srcset="
+                ../images/tablet/milk-tablet.png    1x,
+                ../images/tablet/milk-tablet@2x.png 2x
+              "
+              media="(min-width: 768px)"
+              type="image/png"
+            />
+            <img
+              class="hero-info__img"
+              src="./images/tablet/milk-tablet.png"
+              alt="Milk"
+            />
+          </picture>
+          <div class="hero__wrapper">
+            <p class="hero__description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et
+            </p>
+            <button class="hero__btn btn">
+              <svg class="hero__icon" width="11" height="10">
+                <use href="./images/icons/sprite.svg#icon-arrow-right"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <picture>
+          <source
+            srcset="
+              ./images/desktop/tasty-desktop.png    1x,
+              ./images/desktop/tasty-desktop@2x.png 2x
+            "
+            media="(min-width: 1200px)"
+            type="image/png"
+          />
+          <source
+            srcset="
+              ../images/tablet/tasty-tablet.png    1x,
+              ../images/tablet/tasty-tablet@2x.png 2x
+            "
+            media="(min-width: 768px)"
+            type="image/png"
+          />
+          <img
+            class="hero__bottom-img"
+            src="./images/mobile/tasty-tablet.png"
+            alt="Tasty"
+          />
+        </picture>
       </div>
     </section>
 
     <!--Products-->
-    <section class="products">
+    <section class="products" id="products">
       <div class="container">
         <h2 class="products__heading heading">
           100% natural<span class="heading__accent">products</span>
@@ -282,7 +388,7 @@
       </div>
     </section>
 
-    <section class="information">
+    <section class="information" id="how-its-made">
       <div class="information__container container">
         <h2 class="information__heading heading">
           tradition and love <span class="heading__accent">how it’s made?</span>
@@ -360,7 +466,7 @@
         </ul>
       </div>
     </section>
-    <section class="review container visually-hidden">
+    <section class="review container">
       <div class="review__container container">
         <ul class="review__list list">
           <li class="review__item">
@@ -414,11 +520,12 @@
         </div>
       </div>
     </section>
+
     <section class="stores">
       <div class="stores__container container">
-        <ul class="stores__list list">
+        <ul class="stores__list list" id="contacts">
           <li class="stores__item">
-            <h4 class="stores__heading">cafe</h4>
+            <h3 class="stores__heading">cafe</h3>
             <div class="stores__content stores-place">
               <p class="stores-place__heading">Chicago</p>
               <p class="stores-place__description">
@@ -451,7 +558,7 @@
             </ul>
           </li>
           <li class="stores__item">
-            <h4 class="stores__heading">food truck</h4>
+            <h3 class="stores__heading">food truck</h3>
             <div class="stores__content stores-place">
               <p class="stores-place__heading">Los Angeles</p>
               <p class="stores-place__description">
@@ -484,7 +591,7 @@
             </ul>
           </li>
           <li class="stores__item">
-            <h4 class="stores__heading">cafe</h4>
+            <h3 class="stores__heading">cafe</h3>
             <div class="stores__content stores-place">
               <p class="stores-place__heading">New York</p>
               <p class="stores-place__description">
@@ -521,10 +628,18 @@
           <li class="stores-buttons__item">
             <button class="stores-buttons__btn btn btn--accent" href="">
               Our Locations
+              <svg class="products__icon icon" width="11" height="10">
+                <use href="./images/icons/sprite.svg#icon-arrow-right"></use>
+              </svg>
             </button>
           </li>
           <li class="stores-buttons__item">
-            <button class="stores-buttons__btn btn" href="">Franchise</button>
+            <button class="stores-buttons__btn btn" href="">
+              Franchise
+              <svg class="products__icon icon" width="11" height="10">
+                <use href="./images/icons/sprite.svg#icon-arrow-right"></use>
+              </svg>
+            </button>
           </li>
         </ul>
       </div>
