@@ -1,4 +1,6 @@
 .header {
+    position: relative;
+    
     background-color: $background-pink;
 }
 
@@ -6,23 +8,55 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    padding-top: 37px;
-    padding-bottom: 37px;
-}
-
-.header__button {
-    padding-right: 37px;
-    padding-left: 37px;
-
-    font-weight: 700;
-    color: $color-red;
-
-    background-color: $background-light;
-    border-radius: 22px;
+    padding-top: 6px; 
     
-    &:hover {
-        background-color: $background-hover;
+    @media screen and (min-width: 768px) {
+        padding-top: 37px;
+        padding-bottom: 37px;
+        justify-content: flex-start;
+    }
+
+    @media screen and (min-width: 768px) {
+        justify-content: space-between;
     }
 }
 
+.logo {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        flex-grow: 1;
+    }
+}
+
+.header__button {
+    display: none;
+    padding-right: 37px;
+    padding-left: 37px;
+
+    
+    animation-duration: 2000ms;
+    animation-name: blink;
+    animation-delay: 250ms;
+    animation-iteration-count: infinite;
+
+    &:hover {
+        background-color: $background-hover;
+    }
+
+    @media screen and (min-width: 768px) {
+        display: block;
+    }
+}
+
+@keyframes blink {
+    from {
+       transform: scale(1);
+    }
+
+    to {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+}

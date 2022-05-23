@@ -45,17 +45,39 @@
             </li>
           </ul>
         </nav>
-        <div class="mobile-menu visually-hidden">
-          <button class="button">
-            <svg class="button__icon">
-              <use></use>
-              <use></use>
-            </svg>
-          </button>
+        <button
+          type="button"
+          class="mobile-button"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          data-menu-button
+        >
+          <svg
+            class="button__icon icon"
+            width="20"
+            height="14"
+            aria-label="Переключатель мобильного меню"
+          >
+            <use
+              class="button__icon-burger"
+              href="./images/icons/sprite.svg#icon-burger"
+            ></use>
+            <use
+              class="button__icon-cross"
+              href="./images/icons/sprite.svg#icon-cross"
+            ></use>
+          </svg>
+        </button>
+        <div class="mobile-menu" id="mobile-menu" data-menu>
+          <button class="mobile-menu__btn btn" type="button">Buy now</button>
           <nav class="mobile-menu__nav">
             <ul class="mobile-menu__list list">
               <li class="mobile-menu__item">
-                <a class="mobile-menu__link link" href="#">Home</a>
+                <a
+                  class="mobile-menu__link link mobile-menu__link--current"
+                  href="#"
+                  >Home</a
+                >
               </li>
               <li class="mobile-menu__item">
                 <a class="mobile-menu__link link" href="#">About us</a>
@@ -551,5 +573,6 @@
         <p class="footer__copyright">© 2019 - IceCream. All Rights Reserved.</p>
       </div>
     </footer>
+    <script defer src="/js/mobile-menu.js"></script>
   </body>
 </html>
