@@ -1,5 +1,5 @@
 .stores {
-    background-color: $background-pink;
+    background-color: $background-lightpink;
 
     @media screen and (min-width: 1200px) {
     background-image: url(/images/desktop/stores-img.png);
@@ -14,7 +14,7 @@
 
 .stores__list {
     position: relative;
-    top: -100px;
+    top: -102px;
     margin-top: -20px;
     font-weight: 500;
     font-size: 12px;
