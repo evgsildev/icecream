@@ -86,7 +86,7 @@ img {
   overflow: hidden;
 }
 
-.btn, .mobile-menu, .nav__link, .hero__btn, .hero__icon, .products__container, .products__btn, .products__icon {
+.btn, .button__icon-burger, .button__icon-cross, .mobile-menu, .nav__link, .hero__btn, .hero__icon, .products__container, .products__btn, .products__icon {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -211,13 +211,9 @@ img {
 }
 
 .mobile-button {
-  background-color: #FFB8CA;
+  background-color: transparent;
   padding: 0;
   border: transparent;
-}
-
-.mobile-button.is-open {
-  background-color: #E17992;
 }
 
 @media screen and (min-width: 350px) {
@@ -248,6 +244,7 @@ img {
 
 .button__icon-burger {
   opacity: 1;
+  transition-property: opacity;
 }
 
 .mobile-button.is-open .button__icon-burger {
@@ -255,8 +252,9 @@ img {
 }
 
 .button__icon-cross {
-  opacity: 0;
   fill: #FFFFFF;
+  opacity: 0;
+  transition-property: opacity;
 }
 
 .mobile-button.is-open .button__icon-cross {
