@@ -406,21 +406,21 @@ img {
 .hero {
   position: relative;
   background-color: #FFB8CA;
-  background-image: url(../../images/mobile/circle-mobile.png);
+  background-image: url(./../images/mobile/circle-mobile.png);
   background-repeat: no-repeat;
   background-position: 100% 50%;
 }
 
 @media screen and (min-width: 768px) {
   .hero {
-    background-image: url(../../images/tablet/circle-tablet.png);
+    background-image: url(./../images/tablet/circle-tablet.png);
     background-position: 65% 50%;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .hero {
-    background-image: url(../../images/desktop/circle-desktop.png);
+    background-image: url(./../images/desktop/circle-desktop.png);
     background-position: 58% 55%;
   }
 }

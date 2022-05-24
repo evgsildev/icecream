@@ -1,17 +1,17 @@
 .hero {
     position: relative;
     background-color: $background-pink;
-    background-image: url(../../images/mobile/circle-mobile.png);
+    background-image: url(./../images/mobile/circle-mobile.png);
     background-repeat: no-repeat;
     background-position: 100% 50%;
 
     @media screen and (min-width: 768px) {
-        background-image: url(../../images/tablet/circle-tablet.png);
+        background-image: url(./../images/tablet/circle-tablet.png);
         background-position: 65% 50%;
     }
 
     @media screen and (min-width: 1200px) {
-        background-image: url(../../images/desktop/circle-desktop.png);
+        background-image: url(./../images/desktop/circle-desktop.png);
         background-position: 58% 55%;
     }
 }
