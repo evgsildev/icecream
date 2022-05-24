@@ -1145,7 +1145,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .stores {
-    background-image: url(/images/desktop/stores-img.png);
+    background-image: url(./../images/desktop/stores-img.png);
     background-repeat: no-repeat;
     background-position: top center;
   }
