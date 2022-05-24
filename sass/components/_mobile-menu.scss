@@ -58,7 +58,7 @@
     background-color: $background-modal;
 
     overflow: scroll;
-    z-index: 3;
+    z-index: 9;
     transform: translateX(100%);
     transition-property: transform;
     @extend %transition-style;
