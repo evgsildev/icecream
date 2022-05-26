@@ -86,7 +86,7 @@ img {
   overflow: hidden;
 }
 
-.btn, .button__icon-burger, .button__icon-cross, .mobile-menu, .nav__link, .hero__btn, .hero__icon, .products__container, .products__btn, .products__icon {
+.btn, .button__icon-burger, .button__icon-cross, .mobile-menu, .nav__link, .hero__btn, .hero__icon, .products__container, .products__btn, .products__icon, .photo-set__img {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1139,26 +1139,105 @@ img {
   }
 }
 
+.photo-set {
+  background: linear-gradient(#FFFFFF 40%, #FFF5F6 40%);
+}
+
+.photo-set__container {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(9, 1fr);
+  gap: 5px;
+}
+
+.photo-set__img {
+  transform: scale(1);
+  transition-property: transform;
+}
+
+.photo-set__img:hover, .photo-set__img:focus, .photo-set__img:active {
+  transform: scale(1.03);
+}
+
+.photo-set__img:nth-child(1) {
+  grid-column: 1 / 2;
+  grid-row: 4 / 7;
+}
+
+.photo-set__img:nth-child(2) {
+  grid-column: 2 / 3;
+  grid-row: 3 / 6;
+}
+
+.photo-set__img:nth-child(3) {
+  grid-column: 2 / 3;
+  grid-row: 6 / 9;
+}
+
+.photo-set__img:nth-child(4) {
+  grid-column: 3 / 5;
+  grid-row: 1 / 7;
+}
+
+.photo-set__img:nth-child(5) {
+  grid-column: 3 / 4;
+  grid-row: 7 / 10;
+}
+
+.photo-set__img:nth-child(6) {
+  grid-column: 5 / 6;
+  grid-row: 3 / 6;
+}
+
+.photo-set__img:nth-child(7) {
+  grid-column: 5 / 6;
+  grid-row: 6 / 9;
+}
+
+.photo-set__img:nth-child(8) {
+  grid-column: 6 / 7;
+  grid-row: 2 / 5;
+}
+
+.photo-set__img:nth-child(9) {
+  grid-column: 6 / 7;
+  grid-row: 5 / 8;
+}
+
+.photo-set__img:nth-child(10) {
+  grid-column: 7 / 8;
+  grid-row: 4 / 7;
+}
+
+.review {
+  display: none;
+}
+
 .stores {
-  background-color: #FFF5F6;
+  background: linear-gradient(#FFFFFF 5%, #FFF5F6 5%);
+}
+
+@media screen and (min-width: 768px) {
+  .stores {
+    background: linear-gradient(#FFFFFF 15%, #FFF5F6 15%);
+  }
 }
 
 @media screen and (min-width: 1200px) {
   .stores {
-    background-image: url(./../images/desktop/stores-img.png);
+    background: url(./../images/desktop/stores-img.png), linear-gradient(#FFFFFF 17%, #FFF5F6 17%);
     background-repeat: no-repeat;
-    background-position: top center;
+    background-position: top 45% center;
   }
 }
 
 .stores__container {
-  position: relative;
+  padding-top: 20px;
 }
 
 .stores__list {
-  position: relative;
-  top: -102px;
   margin-top: -20px;
+  margin-bottom: 54px;
   font-weight: 500;
   font-size: 12px;
 }
@@ -1166,6 +1245,7 @@ img {
 @media screen and (min-width: 768px) {
   .stores__list {
     display: flex;
+    margin-bottom: 81px;
     font-size: 14px;
     gap: 20px;
   }
@@ -1173,6 +1253,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .stores__list {
+    margin-bottom: 86px;
     font-size: 16px;
     gap: 30px;
   }

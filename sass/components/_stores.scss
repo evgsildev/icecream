@@ -1,32 +1,35 @@
 .stores {
-    background-color: $background-lightpink;
+    background: linear-gradient($background-light 5%, $background-lightpink 5%);
 
+    @media screen and (min-width: 768px) {
+        background: linear-gradient($background-light 15%, $background-lightpink 15%);
+    }
     @media screen and (min-width: 1200px) {
-    background-image: url(./../images/desktop/stores-img.png);
-    background-repeat: no-repeat;
-    background-position: top center;
+        background: url(./../images/desktop/stores-img.png), linear-gradient($background-light 17%, $background-lightpink 17%);
+        background-repeat: no-repeat;
+        background-position: top 45% center;
     }
 }
 
 .stores__container {
-    position: relative;
+    padding-top: 20px;
 }
-
 .stores__list {
-    position: relative;
-    top: -102px;
     margin-top: -20px;
+    margin-bottom: 54px;
     font-weight: 500;
     font-size: 12px;
 
     @media screen and (min-width: 768px) {
         display: flex;
+        margin-bottom: 81px;
         font-size: 14px;
         gap: 20px;
 
     }
 
     @media screen and (min-width: 1200px) {
+        margin-bottom: 86px;
         font-size: 16px;
         gap: 30px;
     }
