@@ -1,0 +1,42 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    transition-duration: opacity;
+    @extend %transition-style;
+
+    z-index: 6;
+    overflow: scroll;
+}
+
+.backdrop.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.modal-map {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 20px 20px;
+    background-color: $background-lightpink;
+    border-radius: 20px;
+    transform: translate(-50%, -50%) scale(1);
+    transition-duration: transform;
+    @extend %transition-style;
+
+    .backdrop.is-hidden & {
+        transform: translate(-50%, -50%) scale(0.8);
+    }
+
+}
+
+.modal__button {
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 120px;
+}

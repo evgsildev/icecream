@@ -126,11 +126,28 @@
     background-color: $background-red;
     border-radius: 20px;
 
+    transition-duration: background-color;
+    @extend %transition-style;
+
+
+    &:hover,
+    &:focus,
+    &:active {
+        background-color: $background-accent-hover;
+    }
+
     .hero__item:nth-child(2) & {
         color: $color-red;
         
         background-color: $background-light;
+
+        &:hover,
+        &:focus,
+        &:active {
+            background-color: $background-hover;
+        }
     }
+
     @media screen and (min-width: 1200px) {
         height: 40px;
         padding: 0 22px;
