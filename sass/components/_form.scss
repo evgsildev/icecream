@@ -1,9 +1,29 @@
 .modal-form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 90vw;
+    display: flex;
     flex-direction: column;
-    padding: 40px;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+
     background-color: $background-pink;
+    border-radius: 22px;
+    transform: translate(-50%, -50%) scale(1);
+    transition-duration: transform;
+    @extend %transition-style;
+
+
+
+    @media screen and (min-width: 480px) {
+        padding: 30px;
+        width: 450px;
+    }
 
     @media screen and (min-width: 1200px) {
+        padding: 40px;
         width: 550px;
     }
 }
@@ -13,6 +33,10 @@
     font-size: 30px;
     font-family: $font-second;
     color: $color-red;
+
+    @media screen and (max-width: 480px) {
+        font-size: 24px;
+    }
 }
 
 .modal-form__form {
@@ -27,6 +51,10 @@
 
     letter-spacing: 0.01em;
     line-height: 1.16;
+    font-size: 12px;
+    @media screen and (min-width: 480px) {
+        font-size: 16px;
+    }
 }
 
 .form-field {
@@ -36,7 +64,7 @@
 
 .modal-form__input {
     width: 100%;
-    padding: 12px 0 12px 42px;
+    padding: 10px 0 10px 42px;
     border-radius: 22px;
     border: 1px solid transparent;
     outline: none;
@@ -50,14 +78,24 @@
     &:active {
         border: 1px solid $background-accent-hover;
     }
+
+    font-size: 12px;
+    
+    @media screen and (min-width: 480px) {
+        font-size: 16px;
+        padding: 12px 0 12px 42px;
+    }
 }
 
 .modal-form__comments {
     margin-bottom: 10px;
-    padding: 12px 16px;
-
+    padding: 10px 12px;
+    height: 80px;
     border-radius: 22px;
     border: 1px solid transparent;
+
+    transition-property: border;
+    @extend %transition-style;
     outline: none;
     resize: none;
 
@@ -71,16 +109,27 @@
     &::placeholder {
         color: $color-pink;
     }
+
+    @media screen and (min-width: 480px) {
+        padding: 12px 16px;
+        height: 180px;
+    }
 }
 
 .modal-form__button {
-    display: flex;
+    display: inline-flex;
     align-items: center;
-    padding-left: 37px;
-    padding-right: 37px;
-
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 12px;
     &.btn--accent {
         margin-bottom: 10px;
+    }
+
+    @media screen and (min-width: 480px) {
+        padding-left: 37px;
+        padding-right: 37px;
+        font-size: 16px;
     }
 }
 

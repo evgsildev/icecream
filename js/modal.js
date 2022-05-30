@@ -65,6 +65,7 @@
 (() => {
     const refs = {
       openFormBtn: document.querySelector('[data-form-open]'),
+      openFormMobileBtn: document.querySelector('[data-form-mobile-open]'),
       closeFormBtn: document.querySelector('[data-form-close]'),
       formModal: document.querySelector('[data-form]'),
       
@@ -72,6 +73,7 @@
   
     refs.openFormBtn.addEventListener('click', toggleModal);
     refs.closeFormBtn.addEventListener('click', toggleModal);
+    refs.openFormMobileBtn.addEventListener('click', toggleModal);
   
     function toggleModal() {
       refs.formModal.classList.toggle('is-hidden');
