@@ -9,7 +9,7 @@
 
 .btn {
     height: 44px;
-
+    display: inline-block;
     color: $color-red;
     font-weight: 700;
     font-size: 16px;
@@ -47,3 +47,8 @@
     }
 }
 
+.icon {
+    display: inline-block;
+    transition-property: fill;
+    @extend %transition-style;
+}

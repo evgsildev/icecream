@@ -1,0 +1,135 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    transition-duration: opacity;
+    @extend %transition-style;
+
+    z-index: 10;
+    overflow: scroll;
+}
+
+.backdrop.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 20px;
+    background-color: $background-lightpink;
+    border-radius: 22px;
+    transform: translate(-50%, -50%) scale(1);
+    transition-duration: transform;
+    @extend %transition-style;
+
+    .backdrop.is-hidden & {
+        transform: translate(-50%, -50%) scale(0.8);
+    }
+
+    @media screen and (max-width: 767px) {
+        overflow: scroll;
+    }
+    @media screen and (min-width: 768px) {
+        width: 660px;
+    }
+    @media screen and (min-width: 1200px) {
+        width: 1040px;
+    }
+}
+
+.modal__button {
+    width: 120px;
+}
+
+.hero__backdrop {
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+}
+
+.modal-hero__heading, .info__heading {
+    margin-top: 0;
+    margin-bottom: 20px;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 30px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 40px;
+    }
+}
+
+.modal-hero__description {
+    color: $color-dark;
+    margin-bottom: 20px;
+}
+
+
+iframe {
+    margin-bottom: 20px;
+    @media screen and (max-width: 650px) {
+        width: 280px;
+    }
+}
+
+.map {
+    width: auto;
+}
+
+.franchise {
+    width: 320px;
+    
+    line-height: 1.78;
+    font-size: 14px;
+    color: $color-dark;
+    text-align: justify;
+
+    @media screen and (min-width: 650px) {
+        width: 620px;
+        font-size: 16px;
+    }
+}
+
+.franchise__description {
+    margin-bottom: 20px;
+}
+
+.info {
+    @media screen and (max-width: 767px) {
+        max-height: 90vh;
+        width: 90%;
+    }
+}
+
+
+.info__description {
+    margin-bottom: 30px;
+
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.62;
+    color: $color-dark;
+    text-align: center;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 35px;
+
+        font-size: 14px;
+        line-height: 1.76;
+    }
+
+        @media screen and (min-width: 1200px) {
+            font-size: 16px;
+    }
+}
+
