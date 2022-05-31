@@ -305,7 +305,7 @@ iframe {
 
 @media screen and (max-width: 767px) {
   .info {
-    max-height: 90vh;
+    max-height: 90%;
     width: 90%;
   }
 }
@@ -1503,7 +1503,7 @@ iframe {
 }
 
 .photo-set {
-  background: linear-gradient(#FFFFFF 40%, #FFF5F6 40%);
+  background: linear-gradient(#FFF5F6 40%, #FFFFFF 40%);
 }
 
 .photo-set__list {
