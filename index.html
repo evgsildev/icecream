@@ -20,7 +20,7 @@
   </head>
 
   <body>
-    <section class="hero">
+    <section class="hero" id="hero">
       <!--Header-->
       <header class="header">
         <div class="container header__container">
@@ -570,6 +570,8 @@
         </div>
       </div>
     </section>
+
+    <!--Photo set-->
     <section class="photo-set">
       <div class="photo-set__container container">
         <ul class="photo-set__list list">
@@ -726,47 +728,84 @@
         </ul>
       </div>
     </section>
-    <section class="review container">
+
+    <section class="review">
       <div class="review__container container">
         <ul class="review__list list">
-          <li class="review__item">
-            <img class="review__img" src="" alt="" />
+          <li class="review__item hidden">
+            <picture>
+              <source
+                srcset="./images/review1.png 1x, ./images/review1@2x.png 2x"
+              />
+              <img
+                class="review__img"
+                src="./images/review1.png"
+                alt="first person"
+              />
+            </picture>
             <p class="review__description">
               Nullam viverra consectetuer. Quisque cursus et, porttitor risus.
               Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem
               ipsum primis in nibh vel risus.
             </p>
-            <p class="review__person">Emily, Los Angeles</p>
-            <a class="review__link link" href=""
-              ><svg class="review__icon">
-                <use></use></svg
-            ></a>
+            <p class="review__name">Emily, Los Angeles</p>
           </li>
-          <li class="review__item">
-            <img class="review__img" src="" alt="" />
+          <li class="review__item hidden">
+            <picture>
+              <source
+                srcset="./images/review2.png 1x, ./images/review2@2x.png 2x"
+              />
+              <img
+                class="review__img"
+                src="./images/review2.png"
+                alt="second person"
+              />
+            </picture>
             <p class="review__description">
-              Nullam viverra consectetuer. Quisque cursus et, porttitor risus.
-              Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem
-              ipsum primis in nibh vel risus.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
+              amet nobis, totam autem voluptatum, corrupti ipsam sit natus, quia
+              veritatis distinctio eius temporibus non similique placeat.
+              Consequatur corporis harum, quae asperiores obcaecati quaerat
+              suscipit quia placeat hic, error deleniti nemo, accusantium quasi
+              odio! Non, voluptate eaque? Odio voluptas quaerat modi. Lorem
+              ipsum dolor sit amet consectetur adipisicing elit. Suscipit quae
+              enim ut illo ullam assumenda!
             </p>
-            <p class="review__person">Emily, Los Angeles</p>
-            <a class="review__link link" href=""
-              ><svg class="review__icon">
-                <use></use></svg
-            ></a>
+            <p class="review__name">Emily, Los Angeles</p>
           </li>
-          <li class="review__item">
-            <img class="review__img" src="" alt="" />
+          <li class="review__item hidden">
+            <picture>
+              <source
+                srcset="./images/review3.png 1x, ./images/review3@2x.png 2x"
+              />
+              <img
+                class="review__img"
+                src="./images/review3.png"
+                alt="third person"
+              />
+            </picture>
             <p class="review__description">
-              Nullam viverra consectetuer. Quisque cursus et, porttitor risus.
-              Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem
-              ipsum primis in nibh vel risus.
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Perferendis obcaecati accusantium est ex laborum quae, ratione
+              quasi, vel velit quos unde hic impedit nisi explicabo sint libero
+              eius, placeat reiciendis dolor adipisci? Animi. Lorem ipsum, dolor
+              sit amet consectetur adipisicing elit. Voluptatum, tempore
+              quisquam? Dicta cupiditate nobis tempore voluptatem ratione
+              aliquam, reiciendis hic.
             </p>
-            <p class="review__person">Emily, Los Angeles</p>
-            <a class="review__link link" href=""
-              ><svg class="review__icon">
-                <use></use></svg
-            ></a>
+            <p class="review__name">Emily, Los Angeles</p>
+          </li>
+        </ul>
+
+        <ul class="review__icon-list icon-list list">
+          <li class="icon-list__item">
+            <button class="icon-list__button is-click"></button>
+          </li>
+          <li class="icon-list__item">
+            <button class="icon-list__button is-click"></button>
+          </li>
+          <li class="icon-list__item">
+            <button class="icon-list__button is-click"></button>
           </li>
         </ul>
       </div>
@@ -1044,8 +1083,9 @@
         </button>
       </div>
     </div>
-    <button class="top-button">Top</button>
+    <a class="top-button link" href="#hero">Top</a>
     <script defer src="./js/mobile-menu.js"></script>
     <script defer src="./js/modal.js"></script>
+    <script defer src="./js/slider.js"></script>
   </body>
 </html>

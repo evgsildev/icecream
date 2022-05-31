@@ -92,7 +92,7 @@ img {
   overflow: hidden;
 }
 
-.btn, .icon, .backdrop, .modal, .button__icon-burger, .button__icon-cross, .mobile-menu, .nav__link, .modal-form, .modal-form__input, .modal-form__comments, .hero__link, .hero__btn, .hero__icon, .products__container, .products__info.not-shown, .products__wrapper.not-shown, .products__btn, .products__icon, .photo-set__item {
+.btn, .icon, .backdrop, .modal, .button__icon-burger, .button__icon-cross, .mobile-menu, .nav__link, .modal-form, .modal-form__input, .modal-form__comments, .hero__link, .hero__btn, .hero__icon, .products__container, .products__info.not-shown, .products__wrapper.not-shown, .products__btn, .products__icon, .photo-set__item, .icon-list__button {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -167,7 +167,9 @@ img {
   position: fixed;
   bottom: 25px;
   right: 25px;
-  display: block;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   height: 50px;
   width: 50px;
   background-color: #FFFFFF;
@@ -1573,7 +1575,189 @@ iframe {
 }
 
 .review {
+  display: block;
+  padding-top: 80px;
+  padding-bottom: 86px;
+}
+
+@media screen and (min-width: 768px) {
+  .review {
+    padding-top: 121px;
+    padding-bottom: 119px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .review {
+    padding-top: 123px;
+    padding-bottom: 132px;
+  }
+}
+
+.review__list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .review__list {
+    margin-bottom: 35px;
+  }
+}
+
+.review__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 280px;
+  color: #000000;
+  font-weight: 500;
+  animation: scale 250ms;
+}
+
+.review__item.hidden {
   display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .review__item {
+    max-width: 544px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .review__item {
+    max-width: 926px;
+  }
+}
+
+@keyframes scale {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.review__img {
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .review__img {
+    margin-bottom: 24px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .review__img {
+    margin-bottom: 15px;
+  }
+}
+
+.review__description {
+  position: relative;
+  margin-bottom: 52px;
+  padding: 71px 50px 20px 50px;
+  text-align: center;
+  font-size: 12px;
+  line-height: 2.55;
+  background-color: #FAFAFA;
+  background-image: url(../../images/review-desc.png);
+  background-repeat: no-repeat;
+  background-position: 50px 32px;
+}
+
+@media screen and (max-width: 766px) {
+  .review__description {
+    background-position: 45px 55px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .review__description {
+    margin-bottom: 42px;
+    padding: 47px 80px 34px 80px;
+    font-size: 14px;
+    line-height: 2.16;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .review__description {
+    margin-bottom: 34px;
+    padding: 47px 87px 39px 87px;
+    font-size: 16px;
+    line-height: 1.86;
+  }
+}
+
+.review__name {
+  font-size: 14px;
+  line-height: 1.86;
+}
+
+@media screen and (min-width: 768px) {
+  .review__name {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .review__name {
+    font-size: 20px;
+  }
+}
+
+.review__name::before {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 18px;
+  max-width: 32px;
+  height: 4px;
+  background-image: url(./../images/red-dots.png);
+}
+
+@media screen and (min-width: 768px) {
+  .review__name::before {
+    margin-bottom: 14px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .review__name::before {
+    margin-bottom: 15px;
+  }
+}
+
+.review__icon-list {
+  display: flex;
+  justify-content: center;
+}
+
+.icon-list__item:not(:last-child) {
+  margin-right: 18px;
+}
+
+.icon-list__button {
+  display: flex;
+  text-align: center;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: transparent;
+  background: #D9D9D9;
+  transition-property: background-color;
+  cursor: pointer;
+}
+
+.icon-list__button.is-click {
+  background: url(../../images/house-btn.jpg);
+  background-repeat: no-repeat;
 }
 
 .stores {
