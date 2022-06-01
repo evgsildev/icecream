@@ -1759,7 +1759,7 @@ iframe {
 }
 
 .icon-list__button.is-click {
-  background: url(../../images/house-btn.jpg);
+  background: url(./../images/house-btn.jpg);
   background-repeat: no-repeat;
 }
 
