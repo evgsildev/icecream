@@ -1614,7 +1614,7 @@ iframe {
   max-width: 280px;
   color: #000000;
   font-weight: 500;
-  animation: scale 250ms;
+  animation: scale 750ms;
 }
 
 .review__item.hidden {
@@ -1639,6 +1639,9 @@ iframe {
   }
   to {
     transform: translateX(0);
+  }
+  75% {
+    transform: translateX(1%);
   }
 }
 
@@ -1666,7 +1669,7 @@ iframe {
   font-size: 12px;
   line-height: 2.55;
   background-color: #FAFAFA;
-  background-image: url(../../images/review-desc.png);
+  background-image: url(./../images/review-desc.png);
   background-repeat: no-repeat;
   background-position: 50px 32px;
 }
