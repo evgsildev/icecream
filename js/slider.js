@@ -11,7 +11,7 @@ function showTab(index) {
     tabsBtns[index].classList.add('is-click');
 }
 
-hiddeTabs (0);
+hiddeTabs ();
 showTab(0);
 
 tabsBtns.forEach((btn, index) => btn.addEventListener('click', () => {

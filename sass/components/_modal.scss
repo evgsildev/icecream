@@ -9,7 +9,7 @@
     @extend %transition-style;
 
     z-index: 11;
-    overflow: scroll;
+    overflow: hidden;
 }
 
 .backdrop.is-hidden {
