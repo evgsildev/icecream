@@ -8,6 +8,12 @@ body {
   letter-spacing: 0.04em;
 }
 
+@media screen and (max-width: 400px) {
+  .non-scroll {
+    overflow: hidden;
+  }
+}
+
 h1, h2, h3, h4, h5, h6, p, ul {
   margin: 0;
   padding: 0;
@@ -92,7 +98,7 @@ img {
   overflow: hidden;
 }
 
-.btn, .icon, .backdrop, .modal, .button__icon-burger, .button__icon-cross, .mobile-menu, .nav__link, .modal-form, .modal-form__input, .modal-form__comments, .hero__link, .hero__btn, .hero__icon, .products__container, .products__info, .products__wrapper, .products__icon, .photo-set__item, .icon-list__button {
+.btn, .icon, .backdrop, .modal, .button__icon-burger, .button__icon-cross, .mobile-menu, .nav__link, .modal-form, .modal-form__input, .modal-form__comments, .hero__link, .hero__btn, .hero__icon, .products__container, .products__info, .products__wrapper, .photo-set__item, .icon-list__button {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -341,11 +347,18 @@ iframe {
   border: transparent;
 }
 
-@media screen and (min-width: 350px) {
+@media screen and (min-width: 320px) {
   .mobile-button.is-open {
     position: fixed;
     right: 20px;
     z-index: 11;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-button.is-open {
+    top: 30px;
+    right: 0px;
   }
 }
 
@@ -396,7 +409,7 @@ iframe {
   flex-direction: column;
   padding-top: 60px;
   background-color: #E17992;
-  overflow: scroll;
+  overflow: hidden;
   z-index: 9;
   transform: translateX(100%);
   transition-property: transform;
@@ -1265,7 +1278,6 @@ iframe {
 
 .products__icon {
   fill: #D41443;
-  transition-property: transform;
 }
 
 .information {

@@ -79,3 +79,17 @@
       refs.formModal.classList.toggle('is-hidden');
     }
   })();
+
+
+  (() => {
+    const refs = {
+      scrollBody: document.querySelector('[data-menu-button]'),   
+      hideBody: document.querySelector('[data-body]'),
+    };
+  
+    refs.scrollBody.addEventListener('click', hideBoby);
+  
+    function hideBoby() {
+      refs.hideBody.classList.toggle('non-scroll');
+    }
+  })();

@@ -7,3 +7,9 @@ body {
     color: $color-light;
     letter-spacing: 0.04em;
 }
+
+.non-scroll {
+    @media screen and (max-width: 400px) {
+        overflow: hidden;
+    }
+}

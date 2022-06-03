@@ -200,7 +200,4 @@
 
 .products__icon {
     fill: $color-red;
-
-    transition-property: transform;
-    @extend %transition-style;
 }
